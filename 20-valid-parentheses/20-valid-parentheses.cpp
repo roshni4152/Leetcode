@@ -12,7 +12,6 @@ public:
                 stk.pop_back();
             else stk.push_back(i);
         }
-        if(stk.empty()) return true;
-        else return false;
-    }
+        return stk.empty();
+            }
 };
