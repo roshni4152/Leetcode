@@ -14,6 +14,7 @@ public:
             else st2.push(i);
             
         }
-        return (st1==st2);
+        if(st1==st2) return true;
+        else return false;
     }
 };
