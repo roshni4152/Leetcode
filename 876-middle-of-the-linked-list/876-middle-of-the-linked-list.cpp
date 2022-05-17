@@ -15,7 +15,7 @@ public:
         ListNode* temp=head;
         while(temp){
             count++;
-          temp=temp->next;
+            temp=temp->next;
         }
         temp=head;
         for(int i=0;i<count/2;i++){
