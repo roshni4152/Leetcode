@@ -14,12 +14,12 @@ public:
         }   
         ListNode *tempA=headA,*tempB=headB;
         while(tempA!=tempB){
-            if(!tempA){
+            if(tempA==NULL){
                 tempA = headB;
             }else{
                 tempA = tempA->next;
             }
-            if(!tempB){
+            if(tempB==NULL){
                 tempB = headA;
             }else{
                 tempB = tempB->next;
