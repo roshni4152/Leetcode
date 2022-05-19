@@ -31,7 +31,7 @@ public:
         }
         slow->next=reverse(slow->next);
         slow=slow->next;
-        while(slow){
+        while(slow!=NULL){
             if (head->val!=slow->val) return false;
                 head=head->next; 
                 slow=slow->next;
