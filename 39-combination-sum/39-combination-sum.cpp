@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void findcombo(int ind,int target,vector<int> &candidates,vector<vector<int>>&ans,vector<int>ds){
+    void findcombo(int ind,int target,vector<int> &candidates,vector<vector<int>>&ans,vector<int>&ds){
         if(ind==candidates.size()){
             if(target==0)
                 ans.push_back(ds);
