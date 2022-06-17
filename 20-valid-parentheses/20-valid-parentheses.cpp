@@ -1,17 +1,14 @@
 class Solution {
 public:
     bool isValid(string s) {
-       vector<char>stk;
+        vector<char>v;
         for(auto i:s){
-            if(stk.empty()) stk.push_back(i);
-            else if(stk.back()=='(' and i==')')
-                stk.pop_back();
-            else if(stk.back()=='{' and i=='}')
-                stk.pop_back();
-            else if(stk.back()=='[' and i==']')
-                stk.pop_back();
-            else stk.push_back(i);
+            if(v.empty()) v.push_back(i);
+            else if(v.back()=='(' and i==')') v.pop_back();
+            else if(v.back()=='{' and i=='}') v.pop_back();
+            else if(v.back()=='[' and i==']') v.pop_back();
+            else v.push_back(i);
         }
-        return stk.empty();
-            }
+        return v.empty();
+    }
 };
