@@ -1,7 +1,7 @@
 class Solution {
 public:
     int trap(vector<int>& height) {
-        int res=0,n=height.size();
+        int res=0,n=size(height);
        vector<int>lmax(n),rmax(n);
         lmax[0]=height[0];
         rmax[n-1]=height[n-1];
