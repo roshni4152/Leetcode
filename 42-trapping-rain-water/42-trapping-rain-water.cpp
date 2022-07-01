@@ -12,7 +12,7 @@ public:
             rmax[i]=max(rmax[i+1],height[i]);
         }
         for(int i=1;i<n-1;i++){
-            res=res+(min(lmax[i],rmax[i])-height[i]);
+            res+=(min(lmax[i],rmax[i])-height[i]);
         }
         return res;
     }
