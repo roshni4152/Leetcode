@@ -19,8 +19,9 @@ public:
             fast=fast->next;
         }
         while(fast->next!=NULL){
+             slow=slow->next;
             fast=fast->next;
-            slow=slow->next;
+           
         }
         slow->next=slow->next->next;
         return start->next;
